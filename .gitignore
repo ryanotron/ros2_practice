@@ -1,0 +1,4 @@
+bags/*
+docker/compose.yaml
+
+*.pyc
