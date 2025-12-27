@@ -13,6 +13,7 @@
     - topic: `ros2 run <pkg> <exec> --ros-args --remap old/topic:=new/topic`
     - node name: `ros2 run <pkg> <exec> --ros-args --remap __node:=new_node_name` 
 - rviz gets a 2: rviz2
+- `roscd` is now `colcon_cd`, some setup required. See [here](echo "export _colcon_cd_root=/opt/ros/jazzy/" >> ~/.bashrc)
 
 ## Inspection commands
 
@@ -22,6 +23,12 @@
 ## Launch
 
 - launch files can be python now. XML is still possible. See simple example [here](../00_launch/multle_turtle.launch.py)
+
+## Build
+
+- use `colcon build --symlink-install`. This replaces `catkin_make`
+    - cmake arguments can be appended: `colcon build --cmake-args -DCMAKE_BUILD_TYPE=Release`
+- sourcing workspace is `source ws/install/setup.bash`; no more devel
 
 ## Others
 
