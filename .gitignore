@@ -7,3 +7,6 @@ bags/*
 docker/compose.yaml
 
 *.pyc
+
+# editor
+.vscode/*
