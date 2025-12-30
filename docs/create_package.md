@@ -7,3 +7,4 @@
 - options
     - `--license` specify license
     - `--node-name <blah>` make basic executable
+    - `--dependencies <blah>` populate dependencies, usually rclcpp goes here
