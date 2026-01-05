@@ -12,6 +12,7 @@ find_package(ament_cmake REQUIRED)
 # find_package(<dependency> REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(example_interfaces REQUIRED)
+find_package(interface_practice REQUIRED)
 
 add_executable(miniserver
   src/mini_server.cpp
@@ -20,6 +21,7 @@ add_executable(miniserver
 ament_target_dependencies(miniserver
   rclcpp
   example_interfaces
+  interface_practice
 )
 
 add_executable(miniclient
@@ -29,6 +31,7 @@ add_executable(miniclient
 ament_target_dependencies(miniclient
   rclcpp
   example_interfaces
+  interface_practice
 )
 
 if(BUILD_TESTING)

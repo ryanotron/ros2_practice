@@ -12,6 +12,7 @@ find_package(ament_cmake REQUIRED)
 # find_package(<dependency> REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(interface_practice REQUIRED)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -29,13 +30,13 @@ add_executable(minipub
   src/minimal_publisher.cpp
 )
 
-ament_target_dependencies(minipub rclcpp std_msgs)
+ament_target_dependencies(minipub rclcpp std_msgs interface_practice)
 
 add_executable(minisub
   src/minimal_subscriber.cpp
 )
 
-ament_target_dependencies(minisub rclcpp std_msgs)
+ament_target_dependencies(minisub rclcpp std_msgs interface_practice)
 
 install(TARGETS
   minipub

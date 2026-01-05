@@ -20,6 +20,7 @@
 
 - inspect executables in a package: `ros2 pkg executables <pkgname>`
 - `rosmsg show` is different. It's now `ros2 interface show msg/type`
+    - `ros2 interface show srv/blah` for the equivalent for `rossrv show`
 
 ## Launch
 
