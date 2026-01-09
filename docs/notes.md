@@ -6,7 +6,7 @@
 
 ## Basic commands
 
-- what used to be ros* are now ros2 *, e.g. `ros2 node list`, `ros2 topic list`
+- what used to be ros* are now ros2 *, e.g. `ros2 node list`, `ros2 topic list`, `ros2 topic echo`
 - `roscore` is no more
 - run a node `ros2 run <pkg> <exec>`
     - equivalent to the old `rosrun`
